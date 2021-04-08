@@ -23,7 +23,7 @@ Donde:\
 Devuelve un arreglo con los valores de cambio a dar.\
 Ejemplo:
 ```bash
-    C:/> python evalpy -c  500 120
+    C:/> python evalpy.py -c  500 120
     >>
     su cambio es:  [200, 100, 50, 20, 10]
 ```
@@ -31,17 +31,17 @@ Ejemplo:
 ### Balance de corchetes.
 Para analizar balanceo de corchetes utilizar `-b`.
 ```bash
-    C:/> python evalpy -b  <exp_corchetes>
+    C:/> python evalpy.py -b  <exp_corchetes>
 ``` 
 Donde *<exp_corchetes>* se reemplaza por una expresión con corchetes, por ejemplo `[]]`, `[][[]]`,`[]`  etc.\
 Devuelve `true` en el caso que exista balanceo, de lo contrario devuelve `false`.\
 Ejemplo:
 ```bash
-  C:/> python evalpy -b  [][]
+  C:/> python evalpy.py -b  [][]
   >>
   true
   
-  C:/> python evalpy -b  [][
+  C:/> python evalpy.py -b  [][
   >>
   false
 	
